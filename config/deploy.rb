@@ -3,6 +3,7 @@ require "config/database"
 set :application, "coco_links"
 set :repository,  "git@github.com:thirtysixthspan/coco_links.git"
 
+set :template_dir, "config/"
 set :scm, :git
 set :deploy_to, "/srv/www/o.okccoco.com"
 set :user,"deployer"
