@@ -40,4 +40,5 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   
   config.gem 'typus', :source => 'http://gemmcutter.org'
+  config.gem 'haml'
 end
