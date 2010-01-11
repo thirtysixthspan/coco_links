@@ -1,0 +1,47 @@
+* {
+}
+
+body {
+	background-color: #51a353;
+	color: #000;
+}  
+
+#page {
+	width: 960px;
+	margin: auto auto;
+	padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+p {
+}
+
+a {
+	color: #434d22;
+}
+
+a:hover, a:focus, a:active {
+	color: #000;
+}
+
+img, a img {
+}
+
+#page {
+	border-width: 1px;
+	border-color: #000;
+	border-style:solid;
+	text-align: center;
+}
+
+input {
+	font-size: 1.25em;
+}
+
+input:focus, select:focus, option:focus, textarea:focus {
+	background-color: lightyellow;
+}
+
+

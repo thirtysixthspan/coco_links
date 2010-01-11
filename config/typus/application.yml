@@ -1,0 +1,35 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+Access:
+  fields:
+    list: item_id, created_at, ip, referrer
+    form: ip, referrer
+    show: id, item_id, created_at, ip, referrer, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters:
+  search:
+  application: foobar
+  description:
+
+Item:
+  fields:
+    list: url, code, title
+    form: url, code, title
+    show: id, url, code, title, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters:
+  search:
+  application: foobar
+  description:
+

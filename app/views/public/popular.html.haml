@@ -1,0 +1,10 @@
+#page
+  #nav= render :partial=>"nav"
+  #head
+    %h1 Popular Links
+  #content
+    - @popular_items.each do |item_id, count|
+      - item = Item.find_by_id(item_id)
+      %p.item
+        %span.count= count
+        %a{:title => item.code , :href => item.code_url(root_url)}= item.readable

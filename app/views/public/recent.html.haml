@@ -1,0 +1,8 @@
+#page
+  #nav= render :partial=>"nav"
+  #head
+    %h1 Recently Created Links
+  #content
+    - @recent_items.each do |item|
+      %p.item
+        %a{:title => item.code , :href => item.code_url(root_url)}= item.readable

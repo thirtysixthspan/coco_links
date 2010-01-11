@@ -1,0 +1,15 @@
+#page
+  #nav= render :partial=>"nav"
+  #head
+    %h1 Link Created
+  #content
+  %p.item
+    %p 
+      .label Links URL
+      %a{:href => "#{root_url}#{@item.code}"}= "#{root_url}#{@item.code}" 
+    %p 
+      .label Page Title
+      %a{:href => @item.url}= @item.title
+    %p 
+      .label URL
+      %a{:href => @item.url}= @item.url

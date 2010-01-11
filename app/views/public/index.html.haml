@@ -1,0 +1,14 @@
+#page
+  #nav= render :partial=>"nav"
+  #head
+    %h1 Create New Link
+  #content
+    - form_tag "create_url" do
+      %p 
+        .label URL
+        = text_field_tag 'url', "", :size => 70	
+      %p
+        .label Page Title (optional)
+        = text_field_tag 'title', "", :size => 70	
+
+      %p= submit_tag 'Create'
