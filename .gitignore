@@ -2,7 +2,6 @@ log/*.log
 tmp/**/*
 doc/api
 doc/app
-config/database.yml
 *~
 *.cache
 *.log

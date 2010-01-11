@@ -4661,3 +4661,115 @@ Rendered public/_nav (0.1ms)
   [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 1) LIMIT 1[0m
   [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) LIMIT 1[0m
 Completed in 18ms (View: 8, DB: 3) | 200 OK [http://0.0.0.0/popular]
+/!\ FAILSAFE /!\  Mon Jan 11 01:48:53 -0600 2010
+  Status: 500 Internal Server Error
+  No database file specified. Missing argument: database
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:41:in `parse_sqlite_config!'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb:7:in `sqlite3_connection'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/derrickparkhurst/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/derrickparkhurst/ruby/coco_links/vendor/rails/railties/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-01-11 01:50:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"public"}
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (1.6ms)
+Completed in 35ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PublicController#popular (for 127.0.0.1 at 2010-01-11 01:50:31) [GET]
+  Parameters: {"action"=>"popular", "controller"=>"public"}
+  [4;36;1mAccess Load (2.1ms)[0m   [0;1mSELECT * FROM "accesses" ORDER BY created_at DESC LIMIT 1000[0m
+Rendering template within layouts/application
+Rendering public/popular
+Rendered public/_nav (0.1ms)
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) LIMIT 1[0m
+Completed in 39ms (View: 26, DB: 3) | 200 OK [http://localhost/popular]
+
+
+Processing PublicController#recent (for 127.0.0.1 at 2010-01-11 01:50:32) [GET]
+  Parameters: {"action"=>"recent", "controller"=>"public"}
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" LIMIT 10[0m
+Rendering template within layouts/application
+Rendering public/recent
+Rendered public/_nav (0.1ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/recent]
+
+
+Processing PublicController#popular (for 127.0.0.1 at 2010-01-11 01:50:34) [GET]
+  Parameters: {"action"=>"popular", "controller"=>"public"}
+  [4;36;1mAccess Load (2.0ms)[0m   [0;1mSELECT * FROM "accesses" ORDER BY created_at DESC LIMIT 1000[0m
+Rendering template within layouts/application
+Rendering public/popular
+Rendered public/_nav (0.1ms)
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) LIMIT 1[0m
+Completed in 79ms (View: 71, DB: 3) | 200 OK [http://localhost/popular]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-01-11 01:50:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"public"}
+Rendering template within layouts/application
+Rendering public/index
+Rendered public/_nav (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PublicController#create_url (for 127.0.0.1 at 2010-01-11 01:50:42) [POST]
+  Parameters: {"commit"=>"Create", "title"=>"a", "action"=>"create_url", "authenticity_token"=>"+ueMVF1Cn/I0zq96+vmJn3EhRRdL/AzufmCJeNZX62o=", "url"=>"a", "controller"=>"public"}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("created_at", "code", "title", "updated_at", "url") VALUES('2010-01-11 07:50:42', NULL, 'a', '2010-01-11 07:50:42', 'a')[0m
+  [4;36;1mItem Update (0.4ms)[0m   [0;1mUPDATE "items" SET "updated_at" = '2010-01-11 07:50:42', "code" = '3' WHERE "id" = 3[0m
+Rendering template within layouts/application
+Rendering public/create_url
+Rendered public/_nav (0.1ms)
+Completed in 24ms (View: 9, DB: 1) | 200 OK [http://localhost/create_url]

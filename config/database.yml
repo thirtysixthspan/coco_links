@@ -1,0 +1,13 @@
+# store your custom template at database.yml.erb
+#set :template_dir, "foo/bar"
+
+base: &base
+  adapter: sqlite3
+  timeout: 5000
+development:
+  database: db/development.sqlite3
+  <<: *base
+test:
+  database: db/test.sqlite3
+  <<: *base
+
