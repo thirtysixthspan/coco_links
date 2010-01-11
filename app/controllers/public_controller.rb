@@ -1,7 +1,7 @@
 class PublicController < ApplicationController
 
 def recent 
-  @recent_items = Item.find(:all, :limit=>10)
+  @recent_items = Item.find(:all, :limit=>10, :order=> 'created_at DESC')
 end
 
 def popular
